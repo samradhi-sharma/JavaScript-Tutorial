@@ -42,3 +42,21 @@ function cube(number){
 }
 
 console.log(operation(inputs, square));
+
+/**1. map() */
+const inputs1 = [2,4,6,8,7];
+const squaredArray = inputs1.map((num) => num*num);
+console.log(squaredArray);
+
+
+/**2. reduce() */
+// reduce(redFn, initial value);
+// function redFn(accumulator, currentValue, currentIndex, arr)
+// here currentIndex is optional
+
+const input2 = [2,3,4,5,6];
+const sum = input2.reduce((total, num) =>{
+    return total + num;
+},0);
+
+console.log(sum);
