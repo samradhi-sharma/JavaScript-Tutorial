@@ -60,3 +60,25 @@ const sum = input2.reduce((total, num) =>{
 },0);
 
 console.log(sum);
+
+
+
+/** 3. filter() */
+
+const input3 = [4, 10, 2, -3, -2, -9];
+const positives = input3.filter(noNegative);
+
+function noNegative(num){
+  return num>=0;
+}
+
+console.log(`initial array ${input3}`);
+console.log(`filtered array ${positives}`);
+
+
+const negatives = input3.filter(noPositive);
+
+function noPositive(num){
+  return num<0;
+}
+console.log(`negati filtered ${negatives}`);
