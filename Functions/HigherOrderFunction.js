@@ -82,3 +82,15 @@ function noPositive(num){
   return num<0;
 }
 console.log(`negati filtered ${negatives}`);
+
+
+/**4. find  and findIndex */
+
+const input4 = [22, 13, 15, 77, 65, 98, 
+  65,98,76,44,55,65
+];
+const find1 = input4.find((num) => num == 64);
+console.log(find1);
+
+const find2 = input4.findIndex((num) => num == 64);
+console.log(find2);
