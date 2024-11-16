@@ -19,30 +19,33 @@ function Vehicle(name, color, wheels){
             It has ${this.wheels} wheels`);
     };
 
-    
+
 
 // this is how we define class
 class VehicleCl{
     // properties-> writing these properties is optional 
+    // for declaring any property as private we use hash
     name;
     color;
     wheels;
+    #regNumber;
     // constructor
-    constructor(name, color, wheels){
+    constructor(name, color, wheels, number){
         this.name = name;
         this.color = color;
         this.wheels = wheels;
+        this.#regNumber = number;
     }
     // methods
     getDetails(){
         console.log(`The ${this.name} is ${this.color} in color.
-            It has ${this.wheels} wheels`);
+            It has ${this.wheels} wheels. RegNo is ${this.#regNumber}`);
     }
 }
 
 // creating instance of class
 
-const veh1 = new VehicleCl('Bike', 'Red', 2);
+const veh1 = new VehicleCl('Bike', 'Red', 2,88589);
 console.log(veh1);
 
 // Vehicle is a constructor function used to create instances of vehicles.
